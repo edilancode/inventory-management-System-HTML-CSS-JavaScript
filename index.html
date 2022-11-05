@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Estoque - Cadastro de novos produtos</title>
+</head>
+<body onload="totalStockLoad('totStock')">
+
+    <div class="cart">
+        <img src="img/pngwing.com.png" alt="">
+        <p>Itens no estoque:<span id="totStock">0</span></p>
+    </div>
+        
+    <form>
+        <table >
+            <caption>Cadastro de novos produtos</caption>
+
+            <tr>
+                <td class="label">Nome do produto:</td>
+                <td><input id="nomProd" type="text" ></td>
+            </tr>
+
+            <tr>
+                <td class="label">Código do produto:</td>
+                <td><input id="codProd" type="text" ></td>
+            </tr>
+
+            <tr>
+                <td class="label">Quantidade do produto:</td>
+                <td>
+                    <select name="" id="quantProd">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="cadastrar" class="btns cad" id="btnCad" onclick="validateProd('nomProd', 'codProd', 'quantProd')">
+                    <input type="button" value="Ver estoque" class="btns view" id="btnV" onclick="window.open('stockList.html','_self')">
+                    <input type="reset" value="Limpar" class="btns res" id="btnRes">
+                </td>
+            </tr>
+        </table>
+    </form>
+     
+    
+</body>
+</html>

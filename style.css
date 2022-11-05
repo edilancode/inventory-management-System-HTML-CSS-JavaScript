@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+img {
+    width: 70px;
+    margin-right: 20px;
+}
+
+span {
+    font-size: large;
+    margin-left: 5px;
+}
+
+.cart p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.cart {
+    display: flex;
+    position: relative;
+    justify-content:flex-end;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+caption {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(231, 226, 226);
+    box-shadow: 0 5px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    text-align: right;
+}
+
+td input {
+    padding: 3px;
+    margin-bottom: 1px;
+    border: none;
+}
+
+td select {
+    border: none;
+
+}
+
+td input:focus {
+    outline: 0;
+}
+
+td select:focus {
+    outline: 0;
+}
+
+.btns {
+    width: 30%;
+    border: 0px;
+    padding: 5px;
+    margin-top: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.cad {
+    background-color: rgb(20, 168, 20);
+}
+
+.view {
+    background-color: orange;
+}
+
+.res {
+    background-color: rgb(235, 20, 20);
+}
